@@ -1,17 +1,18 @@
 <template>
   <v-app>
-    <navTop />
-    <router-view />
+    <Toolbar></Toolbar>
+    <AppMain></AppMain>
   </v-app>
 </template>
 
 <script>
-import navTop from "views/navTop";
+import AppMain from "views/layout/AppMain";
+import Toolbar from "views/layout/Toolbar";
 export default {
   name: "App",
-  components:{
-    navTop
-  },
-  data: () => ({})
+  components: {
+    AppMain,
+    Toolbar
+  }
 };
 </script>
